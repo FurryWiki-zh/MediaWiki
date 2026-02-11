@@ -1,7 +1,7 @@
 <?php
 
 ## 设置用户代理
-ini_set('user_agent', 'FurryWiki/1.1');
+ini_set('user_agent', 'FurryWiki/1.0 (https://furrywiki.org.cn)');
 
 ## 防止外部执行PHP
 if ( !defined( 'MEDIAWIKI' ) ) {
@@ -11,8 +11,8 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 ## 取消内容压缩
 #$wgDisableOutputCompression = true;
 
-## 档案馆{{Sitename}}名称
-$wgSitename = "有兽档案馆";
+## {{Sitename}}名称
+$wgSitename = "福瑞百科";
 
 # 站点语言代码及变体
 $wgLanguageCode = "zh";
@@ -36,14 +36,13 @@ $wgMemoryLimit = "512M";
 
 ## git版本显示
 $wgGitBin = '/usr/bin/git';
-$wgGitRepositoryViewers['https://git.qiuwen.net.cn/(.*?)(.git)?'] = 'https://git.qiuwen.net.cn/$1/commit/%H';
 $wgGitRepositoryViewers['https://github.com/(.*?)(.git)?'] = 'https://github.com/$1/commit/%H';
 $wgGitRepositoryViewers['https://ghfast.top/https://github.com/(.*?)(.git)?'] = 'https://github.com/$1/commit/%H';
 $wgGitRepositoryViewers['https://gitee.com/(.*?)(.git)?'] = 'https://gitee.com/$1/commit/%H';
 $wgGitInfoCacheDirectory = "/www/wwwroot/MediaWiki/cache/gitinfo";
 
 ## 域名地址
-$wgServer = "https://youshou.wiki";
+$wgServer = "https://furrywiki.org.cn";
 
 ## SEO规范网址
 $wgEnableCanonicalServerLink = true;
@@ -55,11 +54,10 @@ $wgSitemapNamespaces = [
     6,  // File
     12, // Help
     14, // Category
-    300 // Fanmade
 ];
 
 ## iOS“添加到主页”指定图标
-$wgAppleTouchIcon = "https://image.youshou.wiki/thumb/0/0c/Touch-icon.png/150px-Touch-icon.png";
+$wgAppleTouchIcon = "https://image.furrywiki.org.cn/thumb/0/0c/Touch-icon.png/150px-Touch-icon.png";
 
 ## 静态资源地址
 $wgResourceBasePath = $wgScriptPath;
@@ -69,21 +67,21 @@ $wgUseSiteJs = true;
 $wgUseSiteCss = true;
 //$wgResourceLoaderEnableJSProfiler = true;
 
-## 有兽档案馆Logo、favicon图标
+## 福瑞百科Logo、favicon图标
 $wgLogos = [
-	'1x' => "https://image.youshou.wiki/e/e1/有兽档案馆绿色图书Logo.svg",
-	'1.5x' => "https://image.youshou.wiki/e/e1/有兽档案馆绿色图书Logo.svg", // optional if you want to support browsers with SVG support with an SVG logo.
-	'2x' => "https://image.youshou.wiki/e/e1/有兽档案馆绿色图书Logo.svg", // optional if you want to support browsers with SVG support with an SVG logo.
-	'icon' => "https://image.youshou.wiki/e/e1/有兽档案馆绿色图书Logo.svg",
-	'svg' => "https://image.youshou.wiki/e/e1/有兽档案馆绿色图书Logo.svg", // optional if you want to support browsers with SVG support with an SVG logo.
+	'1x' => "https://image.furrywiki.org.cn/e/e1/福瑞百科概念Logo.svg",
+	'1.5x' => "https://image.furrywiki.org.cn/e/e1/福瑞百科概念Logo.svg", // optional if you want to support browsers with SVG support with an SVG logo.
+	'2x' => "https://image.furrywiki.org.cn/e/e1/福瑞百科概念Logo.svg", // optional if you want to support browsers with SVG support with an SVG logo.
+	'icon' => "https://image.furrywiki.org.cn/e/e1/福瑞百科概念Logo.svg",
+	'svg' => "https://image.furrywiki.org.cn/e/e1/福瑞百科概念Logo.svg", // optional if you want to support browsers with SVG support with an SVG logo.
 	'wordmark' => [
-		'src' => "https://image.youshou.wiki/4/4f/有兽档案馆文字标志.svg",	// path to wordmark version
-		'1x' => "https://image.youshou.wiki/4/4f/有兽档案馆文字标志.svg",		// optional if you want to support browsers with SVG support with an SVG logo.
+		'src' => "https://image.furrywiki.org.cn/4/4f/福瑞百科概念文字标志.svg",	// path to wordmark version
+		'1x' => "https://image.furrywiki.org.cn/4/4f/福瑞百科概念文字标志.svg",		// optional if you want to support browsers with SVG support with an SVG logo.
 		'width' => 145,
 		'height' => 45,
 	],
 ];
-$wgFavicon = "https://youshou.wiki/favicon.ico";
+$wgFavicon = "https://furrywiki.org.cn/favicon.ico";
 
 # 利用钩子添加主题色
 #$wgHooks['BeforePageDisplay'][] = function (Outputpage $out, Skin $skin) {
@@ -91,12 +89,12 @@ $wgFavicon = "https://youshou.wiki/favicon.ico";
 #};
 
 ## 邮件系统
-require_once "/www/wwwroot/mw-utils/YsArchives-Settings/EmailSmtpPassword.php";
+require_once "/www/wwwroot/mw-utils/FurryWiki-Settings/EmailSmtpPassword.php";
 $wgEnableEmail = true;
 $wgEnableUserEmail = true; # 用户可调整
 $wgAllowHTMLEmail = true;
 $wgEmergencyContact = "zorua@vip.qq.com";
-$wgPasswordSender = "no-reply@notice.youshou.wiki";
+$wgPasswordSender = "no-reply@notice.furrywiki.org.cn";
 $wgEnotifUserTalk = true; # 用户可调整
 $wgEnotifWatchlist = true; # 用户可调整
 $wgEmailAuthentication = true;
@@ -104,7 +102,7 @@ $wgUserEmailConfirmationTokenExpiry = 1800;
 $wgEmailConfirmToEdit = true;
 
 ## 数据库设置
-require_once "/www/wwwroot/mw-utils/YsArchives-Settings/DBPassword.php";
+require_once "/www/wwwroot/mw-utils/FurryWiki-Settings/DBPassword.php";
 
 # 数据库表结构设置
 $wgDBTableOptions = "ENGINE=InnoDB, DEFAULT CHARSET=binary";
@@ -191,7 +189,7 @@ $wgUseFileCache = true;
 $wgFileCacheDirectory = $wgCacheDirectory;
 
 ## SecretKeys
-require_once "/www/wwwroot/mw-utils/YsArchives-Settings/SecretKeys.php";
+require_once "/www/wwwroot/mw-utils/FurryWiki-Settings/SecretKeys.php";
 
 ## Changing this will log out all existing sessions.
 $wgAuthenticationTokenVersion = "1";
@@ -264,16 +262,16 @@ $wgSecureLogin = true;
 $wgPasswordPolicy['policies']['default']['MinimalPasswordLength'] = 8;
 $wgPasswordPolicy['policies']['default']['MaximalPasswordLength'] = 128;
 
-$wgImportSources = [
-      'qwbk',
-];
+#$wgImportSources = [
+#      'qwbk',
+#];
 
 // 项目别名配置区
-require_once "/www/wwwroot/mw-utils/YsArchives-Settings/NameSpaces.php";
+require_once "/www/wwwroot/mw-utils/FurryWiki-Settings/NameSpaces.php";
 
 // 扩展
-$wgExtensionDirectory = "/www/wwwroot/mw-utils/YsArchives-Extensions";
-require_once "/www/wwwroot/mw-utils/YsArchives-Extensions/LoadExtensions.php";
+$wgExtensionDirectory = "/www/wwwroot/mw-utils/FurryWiki-Extensions";
+require_once "/www/wwwroot/mw-utils/FurryWiki-Extensions/LoadExtensions.php";
 
 ## 此处为用户组和权限信息
 # 保护级别指定
@@ -281,7 +279,7 @@ $wgAvailableRights[] = 'officialprotected';
 $wgRestrictionLevels[] = 'officialprotected';
 $wgAvailableRights[] = 'templateeditor';
 $wgRestrictionLevels[] = 'templateeditor';
-require_once "/www/wwwroot/mw-utils/YsArchives-Settings/UserRights.php";
+require_once "/www/wwwroot/mw-utils/FurryWiki-Settings/UserRights.php";
 
 //页底
 $wgFooterIcons["copyright"] = [
@@ -291,14 +289,7 @@ $wgFooterIcons["copyright"] = [
 		"alt" => "知识共享署名-相同方式共享 4.0",
 		"height" => "31",
 		"width" => "88",
-	],
-	"WAF" => [
-		"src" => "/resources/assets/SafeLine logo.svg",
-		"url" => "https://waf-ce.chaitin.cn/",
-		"alt" => "WAF Powered by SafeLine",
-		"height" => "31",
-		"width" => "88",
-	],
+	]
 ];
 
 $wgRightsIcon = null;
@@ -327,7 +318,7 @@ $wgHooks['SkinAddFooterLinks'][] = function ( Skin $skin, string $key, array &$f
     if ( $key === 'places' ) {
         $footerlinks['TOS'] = Html::element( 'a',
             [
-                'href' => 'https://youshou.wiki/wiki/LIB:用户协议',
+                'href' => 'https://furrywiki.org.cn/wiki/FurryWiki:用户协议',
             ],
         $skin->msg( 'TOS-footer' )->text()
         );
@@ -338,7 +329,7 @@ $wgHooks['SkinAddFooterLinks'][] = function ( Skin $skin, string $key, array &$f
     if ( $key === 'places' ) {
         $footerlinks['copyrightfooterlink'] = Html::element( 'a',
             [
-                'href' => 'https://youshou.wiki/wiki/LIB:著作权条例',
+                'href' => 'https://furrywiki.org.cn/wiki/FurryWiki:著作权条例',
             ],
         $skin->msg( 'copyright-footerlink' )->text()
         );
@@ -349,7 +340,7 @@ $wgHooks['SkinAddFooterLinks'][] = function ( Skin $skin, string $key, array &$f
     if ( $key === 'places' ) {
         $footerlinks['gongyue'] = Html::element( 'a',
             [
-                'href' => 'https://youshou.wiki/wiki/LIB:档案馆章程',
+                'href' => 'https://furrywiki.org.cn/wiki/FurryWiki:百科章程',
             ],
         $skin->msg( 'gongyue-info' )->text()
         );
@@ -358,20 +349,9 @@ $wgHooks['SkinAddFooterLinks'][] = function ( Skin $skin, string $key, array &$f
 
 $wgHooks['SkinAddFooterLinks'][] = function ( Skin $skin, string $key, array &$footerlinks ) {
     if ( $key === 'places' ) {
-        $footerlinks['uptime'] = Html::element( 'a',
-            [
-                'href' => 'https://jiankong.zorua.top',
-            ],
-        $skin->msg( 'uptime-monitor' )->text()
-        );
-    };
-};
-
-$wgHooks['SkinAddFooterLinks'][] = function ( Skin $skin, string $key, array &$footerlinks ) {
-    if ( $key === 'places' ) {
         $footerlinks['version'] = Html::element( 'a',
             [
-                'href' => 'https://youshou.wiki/wiki/Special:version',
+                'href' => 'https://furrywiki.org.cn/wiki/Special:version',
             ],
         $skin->msg( 'version-info' )->text()
         );
@@ -380,20 +360,9 @@ $wgHooks['SkinAddFooterLinks'][] = function ( Skin $skin, string $key, array &$f
 
 $wgHooks['SkinAddFooterLinks'][] = function ( Skin $skin, string $key, array &$footerlinks ) {
     if ( $key === 'places' ) {
-        $footerlinks['qiuwen'] = Html::element( 'a',
-            [
-                'href' => 'https://www.qiuwenbaike.cn',
-            ],
-        $skin->msg( 'qiuwen-friendlink' )->text()
-        );
-    };
-};
-
-$wgHooks['SkinAddFooterLinks'][] = function ( Skin $skin, string $key, array &$footerlinks ) {
-    if ( $key === 'places' ) {
         $footerlinks['REPORT'] = Html::element( 'a',
             [
-                'href' => 'https://youshou.wiki/wiki/LIB:REPORT',
+                'href' => 'https://furrywiki.org.cn/wiki/FurryWiki:REPORT',
             ],
         $skin->msg( 'REPORT' )->text()
         );
@@ -424,8 +393,8 @@ $wgHooks['SkinAddFooterLinks'][] = function ( Skin $skin, string $key, array &$f
 
 # 启用皮肤.
 # 以下皮肤将自动启用（为什么移到这里：SandboxLink和BetaFeatures需要提前加载）:
-$wgStyleDirectory = "/www/wwwroot/mw-utils/YsArchives-Skins";
-require_once "/www/wwwroot/mw-utils/YsArchives-Skins/LoadSkins.php";
+$wgStyleDirectory = "/www/wwwroot/mw-utils/FurryWiki-Skins";
+require_once "/www/wwwroot/mw-utils/FurryWiki-Skins/LoadSkins.php";
 
 // debug only
 $wgReadOnly = false ;
