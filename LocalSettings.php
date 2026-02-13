@@ -1,5 +1,4 @@
 <?php
-
 ## 设置用户代理
 ini_set('user_agent', 'FurryWiki/1.0 (https://furrywiki.org.cn)');
 
