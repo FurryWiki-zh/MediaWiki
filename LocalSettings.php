@@ -368,28 +368,6 @@ $wgHooks['SkinAddFooterLinks'][] = function ( Skin $skin, string $key, array &$f
     };
 };
 
-$wgHooks['SkinAddFooterLinks'][] = function ( Skin $skin, string $key, array &$footerlinks ) {
-    if ( $key === 'places' ) {
-        $footerlinks['miit-beian'] = Html::element( 'a',
-            [
-                'href' => 'https://beian.miit.gov.cn/',
-            ],
-        $skin->msg( 'miit-beian-number' )->text()
-        );
-    };
-};
-
-$wgHooks['SkinAddFooterLinks'][] = function ( Skin $skin, string $key, array &$footerlinks ) {
-    if ( $key === 'places' ) {
-        $footerlinks['mps-beian'] = Html::element( 'a',
-            [
-                'href' => 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=14010702074458',
-            ],
-        $skin->msg( 'mps-beian-number' )->text()
-        );
-    };
-};
-
 # 启用皮肤.
 # 以下皮肤将自动启用（为什么移到这里：SandboxLink和BetaFeatures需要提前加载）:
 $wgStyleDirectory = "/www/wwwroot/mw-utils/FurryWiki-Skins";
