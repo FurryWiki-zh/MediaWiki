@@ -68,11 +68,11 @@ $wgUseSiteCss = true;
 
 ## 福瑞百科Logo、favicon图标
 $wgLogos = [
-	'1x' => "https://image.furrywiki.org.cn/e/e1/福瑞百科概念Logo.svg",
-	'1.5x' => "https://image.furrywiki.org.cn/e/e1/福瑞百科概念Logo.svg", // optional if you want to support browsers with SVG support with an SVG logo.
-	'2x' => "https://image.furrywiki.org.cn/e/e1/福瑞百科概念Logo.svg", // optional if you want to support browsers with SVG support with an SVG logo.
-	'icon' => "https://image.furrywiki.org.cn/e/e1/福瑞百科概念Logo.svg",
-	'svg' => "https://image.furrywiki.org.cn/e/e1/福瑞百科概念Logo.svg", // optional if you want to support browsers with SVG support with an SVG logo.
+	'1x' => "https://image.furrywiki.org.cn/7/7c/%E7%A6%8F%E7%91%9E%E7%99%BE%E7%A7%91-%E6%A6%82%E5%BF%B5Logo.svg",
+	'1.5x' => "https://image.furrywiki.org.cn/7/7c/%E7%A6%8F%E7%91%9E%E7%99%BE%E7%A7%91-%E6%A6%82%E5%BF%B5Logo.svg", // optional if you want to support browsers with SVG support with an SVG logo.
+	'2x' => "https://image.furrywiki.org.cn/7/7c/%E7%A6%8F%E7%91%9E%E7%99%BE%E7%A7%91-%E6%A6%82%E5%BF%B5Logo.svg", // optional if you want to support browsers with SVG support with an SVG logo.
+	'icon' => "https://image.furrywiki.org.cn/7/7c/%E7%A6%8F%E7%91%9E%E7%99%BE%E7%A7%91-%E6%A6%82%E5%BF%B5Logo.svg",
+	'svg' => "https://image.furrywiki.org.cn/7/7c/%E7%A6%8F%E7%91%9E%E7%99%BE%E7%A7%91-%E6%A6%82%E5%BF%B5Logo.svg", // optional if you want to support browsers with SVG support with an SVG logo.
 	'wordmark' => [
 		'src' => "https://image.furrywiki.org.cn/4/4f/福瑞百科概念文字标志.svg",	// path to wordmark version
 		'1x' => "https://image.furrywiki.org.cn/4/4f/福瑞百科概念文字标志.svg",		// optional if you want to support browsers with SVG support with an SVG logo.
