@@ -261,9 +261,9 @@ $wgSecureLogin = true;
 $wgPasswordPolicy['policies']['default']['MinimalPasswordLength'] = 8;
 $wgPasswordPolicy['policies']['default']['MaximalPasswordLength'] = 128;
 
-#$wgImportSources = [
-#      'qwbk',
-#];
+$wgImportSources = [
+    'ysarchives',
+];
 
 // 项目别名配置区
 require_once "/www/wwwroot/mw-utils/FurryWiki-Settings/NameSpaces.php";
