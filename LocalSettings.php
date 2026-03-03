@@ -68,17 +68,17 @@ $wgUseSiteCss = true;
 
 ## 福瑞百科Logo、favicon图标
 $wgLogos = [
-	'1x' => "https://image.furrywiki.org.cn/7/7c/%E7%A6%8F%E7%91%9E%E7%99%BE%E7%A7%91-%E6%A6%82%E5%BF%B5Logo.svg",
-	'1.5x' => "https://image.furrywiki.org.cn/7/7c/%E7%A6%8F%E7%91%9E%E7%99%BE%E7%A7%91-%E6%A6%82%E5%BF%B5Logo.svg", // optional if you want to support browsers with SVG support with an SVG logo.
-	'2x' => "https://image.furrywiki.org.cn/7/7c/%E7%A6%8F%E7%91%9E%E7%99%BE%E7%A7%91-%E6%A6%82%E5%BF%B5Logo.svg", // optional if you want to support browsers with SVG support with an SVG logo.
-	'icon' => "https://image.furrywiki.org.cn/7/7c/%E7%A6%8F%E7%91%9E%E7%99%BE%E7%A7%91-%E6%A6%82%E5%BF%B5Logo.svg",
-	'svg' => "https://image.furrywiki.org.cn/7/7c/%E7%A6%8F%E7%91%9E%E7%99%BE%E7%A7%91-%E6%A6%82%E5%BF%B5Logo.svg", // optional if you want to support browsers with SVG support with an SVG logo.
-	'wordmark' => [
-		'src' => "https://image.furrywiki.org.cn/4/4f/福瑞百科概念文字标志.svg",	// path to wordmark version
-		'1x' => "https://image.furrywiki.org.cn/4/4f/福瑞百科概念文字标志.svg",		// optional if you want to support browsers with SVG support with an SVG logo.
-		'width' => 145,
-		'height' => 45,
-	],
+	'1x' => "https://image.furrywiki.org.cn/6/6a/%E5%A4%A7%E5%85%BD%E6%8D%AE%E7%A0%94%E7%A9%B6%E5%B0%8F%E7%BB%84%E9%A1%B9%E7%9B%AELogo.png",
+	'1.5x' => "https://image.furrywiki.org.cn/6/6a/%E5%A4%A7%E5%85%BD%E6%8D%AE%E7%A0%94%E7%A9%B6%E5%B0%8F%E7%BB%84%E9%A1%B9%E7%9B%AELogo.png", // optional if you want to support browsers with SVG support with an SVG logo.
+	'2x' => "https://image.furrywiki.org.cn/6/6a/%E5%A4%A7%E5%85%BD%E6%8D%AE%E7%A0%94%E7%A9%B6%E5%B0%8F%E7%BB%84%E9%A1%B9%E7%9B%AELogo.png", // optional if you want to support browsers with SVG support with an SVG logo.
+	'icon' => "https://image.furrywiki.org.cn/6/6a/%E5%A4%A7%E5%85%BD%E6%8D%AE%E7%A0%94%E7%A9%B6%E5%B0%8F%E7%BB%84%E9%A1%B9%E7%9B%AELogo.png",
+	//'svg' => "https://image.furrywiki.org.cn/7/7c/%E7%A6%8F%E7%91%9E%E7%99%BE%E7%A7%91-%E6%A6%82%E5%BF%B5Logo.svg", // optional if you want to support browsers with SVG support with an SVG logo.
+	//'wordmark' => [
+		//'src' => "https://image.furrywiki.org.cn/4/4f/福瑞百科概念文字标志.svg",	// path to wordmark version
+		//'1x' => "https://image.furrywiki.org.cn/4/4f/福瑞百科概念文字标志.svg",		// optional if you want to support browsers with SVG support with an SVG logo.
+		//'width' => 145,
+		//'height' => 45,
+	//],
 ];
 $wgFavicon = "https://furrywiki.org.cn/favicon.ico";
 
