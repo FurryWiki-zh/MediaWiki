@@ -80,7 +80,7 @@ $wgLogos = [
 		//'height' => 45,
 	//],
 ];
-$wgFavicon = "https://furrywiki.org.cn/favicon.ico";
+$wgFavicon = "https://furrywiki.org.cn/favicon.svg";
 
 # 利用钩子添加主题色
 #$wgHooks['BeforePageDisplay'][] = function (Outputpage $out, Skin $skin) {
