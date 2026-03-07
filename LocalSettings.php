@@ -271,7 +271,6 @@ require_once "/www/wwwroot/mw-utils/FurryWiki-Settings/NameSpaces.php";
 
 // 扩展
 $wgExtensionDirectory = "/www/wwwroot/mw-utils/FurryWiki-Extensions";
-$wgExtensionAssetsPath = "{$wgScriptPath}/my_extensions"; // 指定浏览器加载资源的路径，映射到不产生Git冲突的软连接
 require_once "/www/wwwroot/mw-utils/FurryWiki-Extensions/LoadExtensions.php";
 
 ## 此处为用户组和权限信息
@@ -373,7 +372,6 @@ $wgHooks['SkinAddFooterLinks'][] = function ( Skin $skin, string $key, array &$f
 # 启用皮肤.
 # 以下皮肤将自动启用（为什么移到这里：SandboxLink和BetaFeatures需要提前加载）:
 $wgStyleDirectory = "/www/wwwroot/mw-utils/FurryWiki-Skins";
-$wgStylePath = "{$wgScriptPath}/my_skins"; // 指定浏览器加载皮肤的路径，映射到不产生Git冲突的软连接
 require_once "/www/wwwroot/mw-utils/FurryWiki-Skins/LoadSkins.php";
 
 // debug only
