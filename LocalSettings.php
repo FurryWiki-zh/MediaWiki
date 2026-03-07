@@ -263,6 +263,7 @@ $wgPasswordPolicy['policies']['default']['MaximalPasswordLength'] = 128;
 
 $wgImportSources = [
     'ysarchives',
+	'wikifur-zh',
 ];
 
 // 项目别名配置区
