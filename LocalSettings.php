@@ -56,7 +56,7 @@ $wgSitemapNamespaces = [
 ];
 
 ## iOS“添加到主页”指定图标
-$wgAppleTouchIcon = "https://image.furrywiki.org.cn/thumb/0/0c/Touch-icon.png/150px-Touch-icon.png";
+$wgAppleTouchIcon = "https://image.furrywiki.org.cn/resources/apple-touch-icon.png";
 
 ## 静态资源地址
 $wgResourceBasePath = $wgScriptPath;
