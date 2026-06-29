@@ -17,3 +17,9 @@ $dateFormats = [
 	'ko date'            => 'Y년 M월 j일 (D)',
 	'ko both'            => 'Y년 M월 j일 (D) H:i',
 ];
+
+$jsDateFormats = [
+	// Can't have both in the browser
+	'juche bracket date' => [ 'alias' => 'juche date' ],
+	'juche bracket both' => [ 'alias' => 'juche both' ],
+];
